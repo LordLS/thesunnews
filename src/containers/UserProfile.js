@@ -4,6 +4,7 @@ import { Card, Icon, Placeholder} from 'semantic-ui-react'
 import {api} from '../helpers/api'
 import { Redirect } from 'react-router-dom'
 import {Message } from 'semantic-ui-react'
+import axios from 'axios'
 
 
 const UserProfile = () => {
@@ -18,7 +19,7 @@ const UserProfile = () => {
             setError(err.message)
         } 
       };
-    
+
   useEffect(() => {
       if(authenticationService.isAuthenticated){
         fetchData();

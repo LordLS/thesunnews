@@ -1,4 +1,4 @@
-const baseurl = process.env.NODE_ENV ==='development' ? 'http://127.0.0.1:8000/' : 'http://tsnnews-env.eba-h2bna33f.us-west-2.elasticbeanstalk.com/'
+const baseurl = process.env.NODE_ENV ==='development' ? 'http://127.0.0.1:8000/' : 'https://thesunnewsapi.com/'
 
 export const api = {
     pub: {
