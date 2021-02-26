@@ -1,6 +1,6 @@
 import 'antd/dist/antd.css'
 import React, {useEffect, useState} from 'react';
-import {Header,Item, Icon, Button, Placeholder, Transition} from 'semantic-ui-react'
+import {Header,Item, Icon, Button, Placeholder} from 'semantic-ui-react'
 import Message from '../components/Message'
 import {useParams, NavLink} from 'react-router-dom'
 import {api} from '../helpers/api'

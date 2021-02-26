@@ -31,7 +31,6 @@ const UpdatePub = () => {
     }
   }
   
-
   return(
     <div>
         {error && <Message negative> {error} </Message>}
