@@ -14,7 +14,7 @@ const PubHome = () => {
   const [todayDate, setTodayDate] = useState(new Date().toUTCString())
 
   function getTodayDate() {
-    setTodayDate(new Date().toUTCString()) 
+    setTodayDate(new Date().toDateString()) 
 }
 
 async function fetchData() {
@@ -30,7 +30,7 @@ async function fetchData() {
       
       fetchData();
     //   Update Date display on Home Page
-      setInterval(getTodayDate, 1000)
+      getTodayDate()
     }, [])
 
     const filter_obj_section =(objlist, section) => {
@@ -87,10 +87,10 @@ async function fetchData() {
     <div style={{ textAlign: 'left'}}>
         <Grid>
             <Grid.Row columns='equal'>
-                <GridColumn >
+                <GridColumn width={12} >
                     <Header disabled>Welcome to The Sun News .com</Header>
                     </GridColumn>
-                    <GridColumn>
+                    <GridColumn width={3}>
                     <Header disabled>{todayDate}</Header>
                     </GridColumn>
             </Grid.Row>

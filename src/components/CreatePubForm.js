@@ -73,7 +73,7 @@ const CreatePubForm = () => {
         setContent(text)  
       }
 
-    if (isWriter == false){
+    if (isWriter === false){
         return <Redirect to='/'/>
     }
 

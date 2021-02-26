@@ -12,7 +12,7 @@ function timeConversion(millisec) {
     } else if (hours < 24) {
         return hours + " Hrs";
     } else {
-        if (days == 1) {
+        if (days === 1) {
             return days + " Day"
         }
         return days + " Days"

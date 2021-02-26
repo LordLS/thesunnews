@@ -13,17 +13,13 @@ const SignUp = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [confirmPassword, setConfPassword] = useState('')
-
-    const [loading, setLoading] = useState(false)
     const [error, setError] = useState('')
 
     function handleSubmit(e) {
         e.preventDefault()
-        setLoading(true)
         authenticationService.signup(username, email, password, confirmPassword)
         .then(res => {
             console.log(res.data)
-                setLoading(true)
                 history.push('/')
                 window.location.reload(false)
                 
