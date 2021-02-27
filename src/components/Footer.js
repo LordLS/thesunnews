@@ -1,6 +1,5 @@
 import React from 'react'
 import {
-    Container,
     Header,
     List,
     Segment,
@@ -17,7 +16,7 @@ const Footer = () => {
   }
     return (
       <Segment inverted vertical style={style}>
-      <Container>
+      <div style={{ margin: '1em'}}>
         <Grid divided inverted stackable>
           <Grid.Row>
             <Grid.Column width={3}>
@@ -45,12 +44,8 @@ const Footer = () => {
             </Grid.Column>
           </Grid.Row>
         </Grid>
-      </Container>
+      </div>
     </Segment>
-      
-       
-    
-
     )
 
 }

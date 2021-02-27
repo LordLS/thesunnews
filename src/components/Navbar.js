@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react'
 import {
-    Container,
     Menu,
     Icon,
     Dropdown,
@@ -41,9 +40,10 @@ const Navbar = () => {
 
 
     return (
+      
     <div>
         <Menu fixed='top' inverted>
-        <Container>
+        <>
             <Menu.Item as={NavLink} to='/' header>
             The Sun News
             </Menu.Item>
@@ -91,7 +91,7 @@ const Navbar = () => {
             </>
             }
             </Menu.Menu>      
-        </Container>
+        </>
         </Menu>
         {error && <Message negative message={error.message}/>}
     </div>
