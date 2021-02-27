@@ -87,18 +87,24 @@ const PubDetail = () => {
       {publication && (
         <div>
         <div>
-          <Item >
+          <Item>
           <Header size='huge'>{publication.title}</Header>
-          <Item.Extra><Icon name='calendar outline'/>{get_date()}  </Item.Extra>
-                  <Item.Extra>Writer(s): {publication.writer.map(x => {
+          <Item.Extra>
+            <Icon name='calendar outline'/>{get_date()}
+            </Item.Extra>
+            <Item.Extra>
+              Writer(s): {publication.writer.map(x => {
                     return (
                       `${x}   `
                     )
-                  })} </Item.Extra>
-          <Item.Image size="large" src={publication.thumbnail} />
+                  })} 
+              </Item.Extra>
+          <img src={publication.thumbnail} style={{width: '80%'}}/>
               <Item.Content>
               <Item.Description>
+              <div style={{fontSize: '2.5em', width: '80%', textAlign: 'justify', marginTop: '2rem'}}>
               <ReactMarkdown source={publication.content}/>
+              </div>
                 </Item.Description>
                   
               </Item.Content>
