@@ -131,8 +131,8 @@ async function fetchData() {
                         )
                     })
                 :
-                
                 <p>No Highlights at the moment ...</p>
+                
                 }
             </Grid.Row>
 

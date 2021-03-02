@@ -1,4 +1,4 @@
-const baseurl = process.env.NODE_ENV ==='development' ? 'http://localhost:3000/' : 'https://thesunnewsapi.com/'
+const baseurl = process.env.NODE_ENV ==='development' ? 'https://thesunnewsapi.com/' : 'https://thesunnewsapi.com/'
 
 export const api = {
     pub: {
